@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers
+END
+mux.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers/mux.h
+END
+encode.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers/encode.h
+END
+mux_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers/mux_types.h
+END
+demux.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers/demux.h
+END
+decode.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers/decode.h
+END
+format_constants.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers/format_constants.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers/types.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers/config.h
+END
+extras.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/YYKit/Vendor/WebP.framework/Headers/extras.h
+END

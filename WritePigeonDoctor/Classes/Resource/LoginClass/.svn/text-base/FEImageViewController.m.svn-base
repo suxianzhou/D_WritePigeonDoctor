@@ -1,0 +1,391 @@
+//
+//  FEImageViewController.m
+//  LoginWithDoctor
+//
+//  Created by zhongyu on 16/8/18.
+//  Copyright © 2016年 Fergus. All rights reserved.
+//
+
+#import "FEImageViewController.h"
+#import "Masonry.h"
+#import "UIColor+Wonderful.h"
+#import "FEUser.h"
+#import <AVFoundation/AVCaptureDevice.h>
+#import "FEAboutPassWordViewController.h"
+#import <AVFoundation/AVMediaFormat.h>
+#import "FEPayMoneyViewController.h"
+
+#import <AssetsLibrary/AssetsLibrary.h>
+@interface FEImageViewController ()<UITableViewDelegate,UITableViewDataSource,FEButtonCellDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,FEImageCellDelegate,RWRequsetDelegate>
+@property(nonatomic,strong)RWRequsetManager * requestManager;
+
+@property(nonatomic,strong)UIImageView * imageView;
+@property(nonatomic,strong)UIImageView * exampleView;
+@property(nonatomic,strong)UIView * backView;
+@property(nonatomic,strong)UIImageView * backgroundView;
+@end
+
+static NSString * const imageViewCell=@"imageViewCell";
+static NSString *const buttonCell = @"buttonCell";
+@implementation FEImageViewController
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+}
+
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    if (_requestManager && _requestManager.delegate == nil)
+    {
+        _requestManager.delegate = self;
+    }
+    
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    _requestManager.delegate = nil;
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    if (_imageView) {
+        _imageView=[[UIImageView alloc]init];
+    }
+    _requestManager = [[RWRequsetManager alloc] init];
+    [self.viewList addGestureRecognizer:self.tap];
+    UIView * headView=[self createHeaderView:@"②身份信息审核"];
+    headView.frame=CGRectMake(0, 0, self.viewList.frame.size.width, self.viewList.frame.size.height/16);
+    self.viewList.delegate=self;
+    self.viewList.dataSource=self;
+    self.viewList.tableHeaderView=headView;
+}
+-(void)changeViewFrame
+{
+    [self.effectView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.view);
+        make.left.equalTo(self.view.mas_left);
+        make.top.equalTo(self.view.mas_top).offset(30);
+        
+    }];
+    [self.viewList mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.view);
+        make.left.equalTo(self.view.mas_left).offset(self.view.frame.size.height/25);
+        make.top.equalTo(self.view.mas_top).offset(35);
+    }];
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 4;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    
+    if(section==0)
+    {
+        return self.viewList.frame.size.height/20;
+    }
+    
+    return 0;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 0)
+    {
+        UIView *backView = [[UIView alloc]init];
+        
+        backView.backgroundColor = [UIColor clearColor];
+        
+        UILabel *titleLabel = [[UILabel alloc]init];
+        
+        titleLabel.text = @"以下信息仅作为认证使用，不会公开";
+        
+        titleLabel.textAlignment = NSTextAlignmentCenter;
+        
+        titleLabel.font = [UIFont systemFontOfSize:13];
+        
+        titleLabel.textColor = [UIColor gainsboroColor];
+        
+        [backView addSubview:titleLabel];
+        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.left.equalTo(backView.mas_left).offset(20);
+            make.right.equalTo(backView.mas_right).offset(-20);
+            make.top.equalTo(backView.mas_top).offset(3);
+            make.bottom.equalTo(backView.mas_bottom).offset(-3);
+        }];
+        
+        return backView;
+    }
+    return nil;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section==2||indexPath.section==3)
+    {
+        return self.viewList.frame.size.height/10;
+    }
+    return self.viewList.frame.size.height/3;
+}
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section==0)
+    {
+        FEImageCell *cell = [tableView dequeueReusableCellWithIdentifier:imageViewCell forIndexPath:indexPath];
+        
+        cell.tileLabel.text=@"请上传您的身份证";
+        
+        cell.proveImageView.tag=80000;
+        
+        cell.exampleImageView.tag=80002;
+        
+        cell.subheadLabel.text=@"  请手持身份证拍摄             （示例：右图）";
+        
+        cell.exampleImageView.image=[UIImage imageNamed:@"bg_sfyz"];
+        
+        cell.delegate=self;
+        
+        return cell;
+    }
+    else if (indexPath.section == 1)
+    {
+        FEImageCell *cell = [tableView dequeueReusableCellWithIdentifier:imageViewCell forIndexPath:indexPath];
+        
+        cell.tileLabel.text=@"请上传您的执业证书";
+        
+        cell.proveImageView.tag=80001;
+        
+        cell.exampleImageView.tag=80003;
+        
+        cell.delegate=self;
+        
+        
+        
+        cell.subheadLabel.text=@"  带职业详细信息页           （示例：右图）";
+        
+        cell.exampleImageView.image=[UIImage imageNamed:@"bg_zyys"];
+        
+        return cell;
+    }
+    else if (indexPath.section==2)
+    {
+        FEButtonCell *cell = [tableView dequeueReusableCellWithIdentifier:buttonCell forIndexPath:indexPath];
+        
+        cell.delegate=self;
+        [cell setTitle:@"上一步"];
+        
+        cell.button.tag=99999;
+        return cell;
+    }
+    else if (indexPath.section==3)
+    {
+        FEButtonCell *cell = [tableView dequeueReusableCellWithIdentifier:buttonCell forIndexPath:indexPath];
+        cell.button.tag=99991;
+        [cell setTitle:@"提交审核"];
+        cell.delegate=self;
+        return cell;
+    }
+    return nil;
+    
+}
+
+
+-(void)alterHeadPortrait:(UIImageView *)imageView
+{
+    _imageView=[self.view viewWithTag:imageView.tag];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    [alert addAction:[UIAlertAction actionWithTitle:@"从相册选择" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        UIImagePickerController *PickerImage = [[UIImagePickerController alloc]init];
+        
+        PickerImage.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
+        PickerImage.allowsEditing = YES;
+        
+        PickerImage.delegate = self;
+        
+        [self presentViewController:PickerImage animated:YES completion:nil];
+    }]];
+    
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
+        
+        AVAuthorizationStatus authStatus=[AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+        [alert addAction:[UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
+            if (authStatus==AVAuthorizationStatusDenied||authStatus==AVAuthorizationStatusRestricted) {
+                
+                [RWSettingsManager promptToViewController:self
+                                                    Title:@"应用相机权限受限,请在设置中启用" response:nil];
+                
+            }
+            else
+            {
+                UIImagePickerController *PickerImage = [[UIImagePickerController alloc]init];
+                
+                PickerImage.sourceType = UIImagePickerControllerSourceTypeCamera;
+                PickerImage.allowsEditing = YES;
+                PickerImage.delegate = self;
+                [self presentViewController:PickerImage animated:YES completion:nil];
+            }
+        }]];
+    }
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    UIImage *newPhoto = [info objectForKey:@"UIImagePickerControllerEditedImage"];
+    
+    FEImageCell * imageCell=[self.viewList cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    FEImageCell * jobsImageCell=[self.viewList cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+    if (imageCell.proveImageView.tag==_imageView.tag) {
+        imageCell.proveImageView.image=newPhoto;
+        [FEUser shareDataModle].identityIDImage=newPhoto;
+    }else
+    {
+        jobsImageCell.proveImageView.image=newPhoto;
+        [FEUser shareDataModle].professionImage=newPhoto;
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+-(void)exampleWithImage:(UIImageView *)imageView
+{
+    _exampleView=imageView;
+    
+    
+    _backView=[[UIView alloc]initWithFrame:self.view.frame];
+    
+    
+    _backView.backgroundColor=[UIColor clearColor];
+    
+    [self.view addSubview: _backView];
+    
+    _backgroundView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
+    [_backView addSubview: _backgroundView];
+    
+    _backgroundView.center= _backView.center;
+    if (_exampleView.tag==80002) {
+        
+        _backgroundView.image=[UIImage imageNamed:@"sfyz"];
+    }else
+    {
+        _backgroundView.image=[UIImage imageNamed:@"zyys"];
+    }
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        CGFloat with=_backView.frame.size.width*0.9;
+        
+        CGFloat height=_backView.frame.size.width*0.7;
+        
+        _backgroundView.frame=CGRectMake(_backView.center.x-with/2,_backView.center.y-height/2, with, height);
+        
+    }];
+    
+    
+    
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        _backgroundView.size=CGSizeMake(0, 0);
+    }];
+    [_backView removeFromSuperview];
+}
+
+
+/**
+ *  按钮点击
+ */
+-(void)button:(UIButton *)button ClickWithTitle:(NSString *)title
+{
+    
+    
+    
+    if (button.tag==99999)
+    {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }else
+    {
+        
+        [self setInfo];
+    }
+    
+}
+
+-(void)dismissToRootViewController
+{
+    __weak typeof(self) weakSelf = self;
+    UIViewController *vc = self;
+    while (vc.presentingViewController) {
+        vc = vc.presentingViewController;
+    }
+    [vc dismissViewControllerAnimated:YES completion:^{
+        
+        [weakSelf.navigationController popToRootViewControllerAnimated:NO];
+        
+    }];
+}
+
+-(void)setInfo
+{
+    _requestManager.delegate=self;
+    
+    if (! [FEUser shareDataModle].identityIDImage || ! [FEUser shareDataModle].professionImage) {
+        
+        [RWSettingsManager promptToViewController:self Title:@"请上传验证图片" response:nil];
+        return;
+    }
+    
+    
+    SHOWLOADING;
+    [SVProgressHUD setMinimumDismissTimeInterval:1000];
+     NSNumber *  INT =[RWRequsetManager groupIDWithOffice:[FEUser shareDataModle].office];
+    
+    __weak typeof(self) weakSelf = self;
+    [_requestManager setDoctorInformationHospital:[FEUser shareDataModle].hospital
+                                  profrssionTitle:[FEUser shareDataModle].appellation
+                                doctorDescription:[FEUser shareDataModle].introduce
+                                          groupid:[NSString stringWithFormat:@"%@",INT]
+                                      officephone:[FEUser shareDataModle].office_phoneNumber
+                                  identityidImage:[FEUser shareDataModle].identityIDImage
+                                  prafessionimage:[FEUser shareDataModle].professionImage
+                                       completion:^(BOOL success, NSString *errorReason) {
+                                          
+                                           if (success) {
+                                               
+                                               DISSMISS;
+                                               [RWSettingsManager promptToViewController:weakSelf Title:@"信息提交成功，请耐心等待审核" response:^{
+                                                        [weakSelf dismissToRootViewController];
+                                               }];
+                                               
+                                           }else
+                                           {
+                                               DISSMISS;
+                                               [RWSettingsManager promptToViewController:weakSelf Title:errorReason response:nil];
+                                           }
+                                           
+        
+                                        }];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+
+@end

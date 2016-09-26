@@ -1,0 +1,17 @@
+//
+//  RWDoctorListController.h
+//  WritePigeonDoctor
+//
+//  Created by zhongyu on 16/7/25.
+//  Copyright © 2016年 RyeWhiskey. All rights reserved.
+//
+
+#import "RWWPDBaseController.h"
+
+@interface RWDoctorListController : RWWPDBaseController
+
+@property (nonatomic,copy)NSArray *doctorResource;
+
+@property (nonatomic,copy)NSString *doctorListUrl;
+
+@end

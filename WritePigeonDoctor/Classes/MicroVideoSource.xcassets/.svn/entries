@@ -1,0 +1,86 @@
+10
+
+dir
+128
+http://XZ_iOS@192.168.1.111:8080/svn/iOS_D_WhitePigeonDoctor/D_WritePigeonDoctor/WritePigeonDoctor/Classes/MicroVideoSource.xcassets
+http://XZ_iOS@192.168.1.111:8080/svn/iOS_D_WhitePigeonDoctor
+
+
+
+2016-09-09T02:43:58.295062Z
+25
+RW_iOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2a89f1cf-66f1-1443-863b-4efbc2ccf3db
+
+record_errorbutton.imageset
+dir
+
+record_normal.imageset
+dir
+
+Contents.json
+file
+
+
+
+
+2016-09-24T03:54:14.000000Z
+31cc68f34934a99c0b0c1bebde56309c
+2016-09-09T02:43:58.295062Z
+25
+RW_iOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+62
+
+record_focusbutton.imageset
+dir
+
+record_video_bg.imageset
+dir
+
+record_upbutton.imageset
+dir
+
+record_cancelbutton.imageset
+dir
+
+record_playbutton.imageset
+dir
+
+record_hover.imageset
+dir
+

@@ -1,0 +1,80 @@
+10
+
+dir
+128
+http://XZ_iOS@192.168.1.111:8080/svn/iOS_D_WhitePigeonDoctor/D_WritePigeonDoctor/Pods/YYKit/YYKit
+http://XZ_iOS@192.168.1.111:8080/svn/iOS_D_WhitePigeonDoctor
+
+
+
+2016-09-09T02:43:58.295062Z
+25
+RW_iOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2a89f1cf-66f1-1443-863b-4efbc2ccf3db
+
+YYKit.h
+file
+
+
+
+
+2016-09-24T03:54:33.000000Z
+7569c61b2ee168a6c8dfb4ea10d6c4bb
+2016-09-09T02:43:58.295062Z
+25
+RW_iOS
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5560
+
+Model
+dir
+
+Image
+dir
+
+Cache
+dir
+
+Utility
+dir
+
+Text
+dir
+
+Base
+dir
+

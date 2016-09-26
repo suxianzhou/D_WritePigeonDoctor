@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/TencentOpenAPI/TencentOpenAPI.framework/Headers
+END
+TencentApiInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/TencentOpenAPI/TencentOpenAPI.framework/Headers/TencentApiInterface.h
+END
+QQApiInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/TencentOpenAPI/TencentOpenAPI.framework/Headers/QQApiInterface.h
+END
+TencentMessageObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/TencentOpenAPI/TencentOpenAPI.framework/Headers/TencentMessageObject.h
+END
+sdkdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/TencentOpenAPI/TencentOpenAPI.framework/Headers/sdkdef.h
+END
+TencentOAuth.h
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/TencentOpenAPI/TencentOpenAPI.framework/Headers/TencentOAuth.h
+END
+QQApiInterfaceObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/TencentOpenAPI/TencentOpenAPI.framework/Headers/QQApiInterfaceObject.h
+END
+TencentOAuthObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/TencentOpenAPI/TencentOpenAPI.framework/Headers/TencentOAuthObject.h
+END

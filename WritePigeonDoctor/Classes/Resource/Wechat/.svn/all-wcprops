@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/Wechat
+END
+libWeChatSDK.a
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/Wechat/libWeChatSDK.a
+END
+WXApiObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/Wechat/WXApiObject.h
+END
+WechatAuthSDK.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/Wechat/WechatAuthSDK.h
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/Wechat/README.txt
+END
+UMSocialWechatHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/Wechat/UMSocialWechatHandler.h
+END
+libSocialWechat.a
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/Wechat/libSocialWechat.a
+END
+WXApi.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/Wechat/WXApi.h
+END

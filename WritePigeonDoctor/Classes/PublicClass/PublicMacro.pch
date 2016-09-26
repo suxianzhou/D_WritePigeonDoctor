@@ -1,0 +1,75 @@
+//
+//  PublicMacro.pch
+//  WritePigeonDoctor
+//
+//  Created by zhongyu on 16/7/25.
+//  Copyright © 2016年 RyeWhiskey. All rights reserved.
+//
+
+#ifndef PublicMacro_pch
+#define PublicMacro_pch
+
+#import <Masonry.h>
+#import <SVProgressHUD.h>
+#import "MBProgressHUD.h"
+#import <YYKit/YYKit.h>
+#import "Macro.h"
+#import "ThirdMacros.h"
+#import "RWDataModels.h"
+#import "RWViewsOfMacro.h"
+#import "RWChatManager.h"
+#import "RWSettingsManager.h"
+#import "UITabBarController+toLoginViewController.h"
+
+#ifndef __WPD_MAIN_COLOR__
+#define __WPD_MAIN_COLOR__ [UIColor colorWithRed:43.f/255.f green:141.f/255.f blue:241.f/255.f alpha:1.0]
+#endif
+
+#ifndef __TOKEN_KEY__
+#define __TOKEN_KEY__ [UIDevice currentDevice].identifierForVendor.UUIDString
+#endif
+
+#ifndef __EMSDK_KEY__
+#define __EMSDK_KEY__ @"zhongyujiaoyu#writepigeondoctor"
+#endif
+
+#ifndef __MAIN_INDEX__
+#define __MAIN_INDEX__ @"http://baige.zhongyuedu.com/list.php?fid=42"
+#endif
+
+#define __MAIN_INDEX_URL__ [NSURL URLWithString:__MAIN_INDEX__]
+
+#ifndef __DEFAULT_NAVIGATION_BAR__
+#define __DEFAULT_NAVIGATION_BAR__ [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"渐变"] forBarMetrics:UIBarMetricsDefault]
+#endif
+
+#ifndef __NAVIGATION_DEUAULT_SETTINGS__
+#define __NAVIGATION_DEUAULT_SETTINGS__ \
+        self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];\
+        self.tabBarController.tabBar.translucent = NO;\
+        self.navigationController.navigationBar.translucent = NO;\
+        self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};\
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+#endif
+
+#ifndef __SANDBOX_PATH__
+#define __SANDBOX_PATH__ [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) lastObject]
+#endif
+
+#ifdef DEBUG
+#   if DEBUG
+#       ifndef MESSAGE
+#           define MESSAGE(...) NSLog(@"\n**********************************\n\n** Class: %@\n\n** Methot: %s\n\n** Lines: No.%d\n\n** Log: %@\n\n**********************************",NSStringFromClass([self class]),__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#       endif
+#   else
+#       ifndef MESSAGE
+#           define MESSAGE(...)
+#       endif
+#   endif
+#else
+#   ifndef MESSAGE
+#       define MESSAGE(...)
+#   endif
+#endif
+
+#endif /* PublicMacro_pch */

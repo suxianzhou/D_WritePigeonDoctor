@@ -1,0 +1,80 @@
+10
+
+dir
+128
+http://XZ_iOS@192.168.1.111:8080/svn/iOS_D_WhitePigeonDoctor/D_WritePigeonDoctor/WritePigeonDoctor/Classes/Resource/Share.xcassets
+http://XZ_iOS@192.168.1.111:8080/svn/iOS_D_WhitePigeonDoctor
+
+
+
+2016-09-09T02:43:58.295062Z
+25
+RW_iOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2a89f1cf-66f1-1443-863b-4efbc2ccf3db
+
+UMS_social_demo.imageset
+dir
+
+icon_share_wechat.imageset
+dir
+
+icon_share_qzone.imageset
+dir
+
+icon_share_webo.imageset
+dir
+
+Contents.json
+file
+
+
+
+
+2016-09-24T03:54:05.000000Z
+31cc68f34934a99c0b0c1bebde56309c
+2016-09-09T02:43:58.295062Z
+25
+RW_iOS
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+62
+
+icon_share_moment.imageset
+dir
+
+icon_share_qq.imageset
+dir
+

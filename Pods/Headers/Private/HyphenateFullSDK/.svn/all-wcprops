@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK
+END
+EMTextMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMTextMessageBody.h
+END
+EMConversation.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMConversation.h
+END
+EMOptions+PrivateDeploy.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMOptions+PrivateDeploy.h
+END
+IEMChatroomManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/IEMChatroomManager.h
+END
+EMCallLocalView.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMCallLocalView.h
+END
+IEMChatManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/IEMChatManager.h
+END
+EMErrorCode.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMErrorCode.h
+END
+EMClient+Call.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMClient+Call.h
+END
+EMVideoMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMVideoMessageBody.h
+END
+EMPushOptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMPushOptions.h
+END
+EMOptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMOptions.h
+END
+EMLocationMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMLocationMessageBody.h
+END
+EMChatroomManagerDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMChatroomManagerDelegate.h
+END
+EMChatManagerDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMChatManagerDelegate.h
+END
+EMGroupOptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMGroupOptions.h
+END
+EMClientDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMClientDelegate.h
+END
+EMChatroom.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMChatroom.h
+END
+EMCursorResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMCursorResult.h
+END
+EMClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMClient.h
+END
+EMCallSession.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMCallSession.h
+END
+IEMCallManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/IEMCallManager.h
+END
+EMSDK.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMSDK.h
+END
+EMContactManagerDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMContactManagerDelegate.h
+END
+EMGroupManagerDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMGroupManagerDelegate.h
+END
+EMCallRemoteView.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMCallRemoteView.h
+END
+EMMessage.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMMessage.h
+END
+EMCmdMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMCmdMessageBody.h
+END
+EMVoiceMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMVoiceMessageBody.h
+END
+EMError.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMError.h
+END
+EMGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMGroup.h
+END
+IEMContactManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/IEMContactManager.h
+END
+OpenGLView20.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/OpenGLView20.h
+END
+IEMGroupManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/IEMGroupManager.h
+END
+EMCallManagerDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMCallManagerDelegate.h
+END
+EMMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMMessageBody.h
+END
+EMFileMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMFileMessageBody.h
+END
+EMSDKFull.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMSDKFull.h
+END
+EMImageMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/iOS_D_WhitePigeonDoctor/!svn/ver/25/D_WritePigeonDoctor/Pods/Headers/Private/HyphenateFullSDK/EMImageMessageBody.h
+END
